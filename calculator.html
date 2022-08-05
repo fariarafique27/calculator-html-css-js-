@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="calculator.css">
+    <title>CALCULATOR</title>
+    
+<body>
+    <div class="container">
+        
+        <div class="calculator">
+            <input type="text" class="inputext" id="inputext" placeholder="0">
+            <div class="button">
+                <table class="table">
+                    <tr>
+                        <td> <button class="operater" onclick="clr()" >C</button></td>
+                        <td> <button  class="operater"onclick="del()" >del</button></td>
+                        <td> <button  class="number"onclick="calculate('%')" >&percnt;</button></td>
+                        <td> <button  class="operater" onclick="calculate('/')" >&divide;</button></td>
+
+                    </tr>
+
+                    <tr>
+                       
+                        <td> <button class="number" onclick="calculate('7')" >7</button></td>
+                        <td> <button  class="number"onclick="calculate('8')" >8</button></td>
+                        <td> <button class="number" onclick="calculate('9')" >9</button></td>
+                        <td> <button class="operater" onclick="calculate('*')" >&times;</button></td>
+
+                    </tr>
+                    <tr>
+                        <td> <button class="number" onclick="calculate('4')" >4</button></td>
+                        <td> <button  class="number" onclick="calculate('5')" >5</button></td>
+                        <td> <button  class="number" onclick="calculate('6')" >6</button></td>
+                        <td> <button  class="operater" onclick="calculate('+')" >+</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button class="number" onclick="calculate('1')" >1</button></td>
+                        <td> <button class="number"  onclick="calculate('2')" >2</button></td>
+                        <td> <button  class="number" onclick="calculate('3')" >3</button></td>
+                        <td> <button class="operater"  onclick="calculate('-')" >-</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button class="number" onclick="calculate('.')" >.</button></td>
+                        <td> <button  class="number" onclick="calculate('0')" >0</button></td>
+                        <td colspan="2  "> <button class="equal" onclick="equal()" >=</button></td>
+                    </tr>
+
+                </table>
+                <script src="calculator.js"> </script>
+
+            </div>
+        </div>
+
+    </div>
+    
+
+</body>
